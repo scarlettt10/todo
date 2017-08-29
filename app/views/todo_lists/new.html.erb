@@ -1,0 +1,15 @@
+<h1>Add Item</h1>
+
+<%= form_for @todo_list do |f| %>
+  <div>
+    <%= f.label :item %>
+    <%= f.text_field :item, placeholder: 'item', required: true %>
+  </div>
+
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: 'name', required: true %>
+  </div>
+
+  <%= f.submit %>
+<% end %>
